@@ -9,4 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Okams Law Function
+```{r}
+ GNP<- function(d_unemployment, intercept = 0.856, slope = -1.827){
+   d_GNP = d_unemployment*slope + intercept
+   
+   return(d_GNP)
+ }
+```
 
